@@ -1,0 +1,80 @@
+table {
+    border-collapse: collapse;
+    width: 650px;
+    margin-bottom: 40px;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #1a1a1a;
+    transition: background-color 0.2s;
+}
+
+tr:nth-child(1) td,
+tr:nth-child(2) td {
+    background-color: #068f8f;
+}
+
+tr:nth-child(1) td:hover,
+tr:nth-child(2) td:hover {
+    background-color: #f5f506;
+}
+
+tr:nth-child(3) td,
+tr:nth-child(4) td {
+    background-color: #f5f506;
+}
+
+tr:nth-child(3) td:hover,
+tr:nth-child(4) td:hover {
+    background-color: #068f8f;
+}
+
+.phone {
+    width: 160px;
+    height: 280px;
+    background-color: #cddc39;
+    border: 3px solid #558b2f;
+    border-radius: 20px;
+    position: relative;
+    transform: translate(30px, 10px);
+}
+
+.screen {
+    width: 120px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #558b2f;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #111;
+}
+
+.keypad {
+    position: absolute;
+    top: 130px;
+    left: 18px;
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.key {
+    width: 28px;
+    height: 28px;
+    background-color: #3f3d56;
+    border-radius: 50%;
+}
